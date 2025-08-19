@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  padding: 1rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  background-color: #f5f5f5;
+  border: 1px solid #333;
+  color: #333;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+  margin: 5px;
+}
+
+h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+a {
+  color: #0070f3;
+  text-decoration: underline;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.banner-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.banner-item {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner-img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.banner-title {
+  margin-top: 6px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.cateogry-wrap {
+  margin-bottom: 16px;
+}
+
+.category-item {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.category-item > div {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+}
